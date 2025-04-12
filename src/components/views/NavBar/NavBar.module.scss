@@ -1,0 +1,30 @@
+@import '../../../styles/settings.scss';
+
+.navBar{
+    background-color: $main-color;
+    margin-inline: $margin-padding;
+    border-radius: $radius * 2;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+    .logo{
+        background: linear-gradient(to right, 
+        rgba(255, 255, 255, 0.9) 0%, 
+        rgba(255, 255, 255, 0.552) 85%, 
+        rgba(255, 255, 255, 0) 100%);
+        position: relative;
+        z-index: 1;
+        width: 200px;
+    }
+    img{
+        max-width: 150px;
+        max-height: 150px;
+        position: relative;
+        z-index: 2;
+    }
+    .links{
+        min-height: 150px;
+        flex: 1;
+    }
+}
