@@ -26,5 +26,21 @@
     .links{
         min-height: 150px;
         flex: 1;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .link{
+        text-decoration: none;
+        color: $bright-color-navbar;
+        border: 0px solid;
+        padding: $margin-padding;
+        padding-inline: $margin-padding * 2;
+        border-radius: $radius * 3;
+    }
+    .link:hover{
+        background-color: gray;
+        color: black;
+        transition: $transition;
     }
 }
